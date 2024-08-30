@@ -7,22 +7,17 @@ body {
     background-color: #222831;
     color: #F7F7F8;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     position: relative;
     gap: 20px;
 }
 
 
-.logo {
-    height: 25px;
-    width: 25px;
-}
-
 .header {
-    width: 80%;
+    width: 100%;
     padding: 20px;
     text-align: center;
     display: flex;
@@ -32,7 +27,8 @@ body {
 }
 
 .header h1 {
-    margin-bottom: 10px;
+    margin: 0 0 10px 0;
+    font-size: 2.5em;
 }
 
 .header-links {
@@ -60,13 +56,18 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
     margin-bottom: 20px;
-    max-width: 600px;
+    max-width: 800px;
 }
 
 .job-header {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     margin-bottom: 10px;
+}
+
+.job-title {
+    flex: 1;
 }
 
 .job-title h3 {
@@ -81,9 +82,12 @@ body {
     color: #FDF7E4;
 }
 
+.job-dates {
+    text-align: right;
+}
+
 .job-dates p {
     margin: 0;
-    text-align: right;
     color: #FDF7E4;
 }
 
@@ -100,4 +104,11 @@ body {
 
 .job-description ul li strong {
     color: #FDF7E4;
+}
+
+.company-logos {
+    width: 55px;
+    height: 55px;
+    padding-right: 10px;
+    border-radius: 10px;
 }
