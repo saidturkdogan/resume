@@ -1,223 +1,76 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Resume</title>
-    <link rel="icon" href="favicon.png" type="image/x-icon">
-    <style>
-        /* Dark mode stili */
-        body.dark-mode {
-            background-color: #121212;
-            color: #e0e0e0;
-        }
-
-        body.dark-mode .container {
-            background-color: #1e1e1e;
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-        }
-
-        body.dark-mode .header h1,
-        body.dark-mode .section h2,
-        body.dark-mode .section h3 {
-            color: #ffffff;
-        }
-
-        body.dark-mode .section p,
-        body.dark-mode .section ul li,
-        body.dark-mode a {
-            color: #b0b0b0;
-        }
-
-        body.dark-mode a:hover {
-            color: #ffffff;
-        }
-
-        /* Sayfa geneli stil */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #121212;
-            color: #e0e0e0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            position: relative;
-        }
-
-        .container {
-            width: 80%;
-            margin: auto;
-            background-color: #1e1e1e;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-        }
-
-        .header,
-        .section {
-            margin-bottom: 20px;
-        }
-
-        .header h1 {
-            margin: 0;
-            font-size: 2em;
-            color: #ffffff;
-        }
-
-        .header p {
-            margin: 5px 0 0 0;
-            color: #b0b0b0;
-        }
-
-        .section h2 {
-            margin: 0 0 10px 0;
-            font-size: 1.5em;
-            color: #ffffff;
-            border-bottom: 2px solid #575555;
-        }
-
-        .section ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .section ul li {
-            margin-bottom: 10px;
-        }
-
-        /* Dark mode butonunu sağ üst köşeye yerleştirme */
-        .dark-mode-toggle {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            padding: 10px 20px;
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 1em;
-        }
-
-        .dark-mode-toggle:hover {
-            background-color: #0056b3;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="dark-mode">
-    <button class="dark-mode-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
-    <script>
-        function toggleDarkMode() {
-            document.body.classList.toggle("dark-mode");
-        }
-    </script>
-    <div class="container">
-        <div class="header">
-            <h1>Said Cemal Türkdoğan</h1>
-            <p>Email: <a href="mailto:saidcemalturkdogan@gmail.com">saidcemalturkdogan@gmail.com</a></p>
-            <p>Github: <a href="https://github.com/saidturkdogan" target="_blank">saidturkdogan</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/saidturkdogan/" target="_blank">saidturkdogan</a></p>
+<body>
+    <header class="header">
+        <h1>Said Cemal Türkdoğan</h1>
+        <div class="header-links">
+            <a href="mailto:saidcemalturkdogan@gmail.com">
+                <img src="mail.png" alt="Email Icon" class="logo">
+            </a>
+            <a href="https://github.com/saidturkdogan/">
+                <img src="github-for-dark.png" alt="Github Icon" class="logo">
+            </a>
+
+
+            </a>
+            <a href="https://www.linkedin.com/in/saidturkdogan/" class="logo">
+                <img src="linkedin.png" alt="LinkedIn Icon" style="width: 25px; height: 25;">
+            </a>
         </div>
+    </header>
 
-        <div class="section">
-            <h2>Summary</h2>
-            <p> I am a second-year student in the Software Development Department at Yeditepe University.
-                As an innovative and creative software developer, I believe in the potential of technology to
-                improve the world. Therefore, I want to use my knowledge and skills in software development
-                to make people's lives easier and contribute to making the world a better place.</p>
-        </div>
+    <main>
+        <section class="job-card">
+            <div class="job-header">
+                <div class="job-title">
+                    <h3>Yeditepe University</h3>
+                    <p>Software Development</p>
+                </div>
+                <div class="job-dates">
+                    <p>September 2021 - Present</p>
+                    <p>Bachelor's Degree</p>
+                </div>
+            </div>
+            <div class="job-description">
+                <ul>
+                    <li>I am a third-year Software Development student at Yeditepe University, studying in a
+                        curriculum conducted entirely in English. My academic journey has equipped me with a
+                        solid foundation in both theoretical knowledge and practical skills essential for software
+                        development.</li>
+                </ul>
+            </div>
+        </section>
 
-        <div class="section">
-            <h2>Work experience</h2>
-            <ul>
-                <li>
-                    <strong>FLO Group</strong> - Summer Intern ( 08/2023 – 09/2023)
-                    <p>We obtained information about all departments within Flo Mağazacılık. We
-                        learned about the programs and architectures they use and gathered feedback
-                        from managers and executives regarding our career prospects.</p>
-                </li>
-
-            </ul>
-
-            <ul>
-                <li>
-                    <strong>The Penguin Squad</strong> - Social Media Editor ( 12/2021 – 09/2022)
-                    <p>Designed and executed effective social media strategies to enhance brand
-                        recognition and visibility, resulting in a remarkable 40% increase in follower.
-                        Employed active monitoring of social media trends and metrics to consistently
-                        optimize content, leading to an impressive 60% hike in engagement across
-                        multiple platforms.
-                        Collaborations were made with other projects</p>
-                </li>
-
-            </ul>
-        </div>
-
-
-
-        <div class="section">
-            <h2>Education</h2>
-            <ul>
-                <li>
-                    <strong>Yeditepe University</strong> - Software Development (2021-2026)
-                    <p>I am a 2nd year student studying software development at Yeditepe University.
-                        I am ready to contribute to the dynamic world of technology by focusing on
-                        continuously improving my knowledge and skills.</p>
-                </li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>Projects</h2>
-        </div>
-
-        <div class="section">
-            <h3>Real-Time Chat Application</h3>
-            <ul>
-                <li>
-                    This project involves developing a real-time chat application using Node.js, Express, and Socket.IO.
-                    The
-                    server side (server.js) enables clients to connect via WebSocket and exchange messages. The client
-                    side
-                    (chat.js) provides a web interface for users to send and display messages. HTML (index.html) and CSS
-                    (style.css) files define the structure and style of the user interface.
-                </li>
-                <a href="https://github.com/saidturkdogan/Real-Time-ChatApp" target="_blank">Github Link</a>
-
-            </ul>
-        </div>
-
-        <div class="section">
-            <h3>Gender and Age Detection</h3>
-            <ul>
-                <li>
-                    I made a program that separates age and gender using OpenCv. I used ready-made caffemodels for age
-                    and
-                    face recognition.
-                </li>
-                <a href="https://github.com/saidturkdogan/Gender_Age_Detection" target="_blank">Github Link</a>
-
-            </ul>
-        </div>
-
-        <div class="section">
-            <h3>TodoZ</h3>
-            <ul>
-                <li>
-                    This FastAPI project includes a simple To-Do application. The application allows you to manage To-Do
-                    items via HTTP requests and stores the data in a SQLite database.A database model is defined using
-                    Tortoise ORM to represent To-Do items.
-                </li>
-                <a href="https://github.com/saidturkdogan/todoappsct" target="_blank">Github Link</a>
-
-            </ul>
-        </div>
-
-    </div>
+        <section class="job-card">
+            <div class="job-header">
+                <div class="job-title">
+                    <h3>DogGO</h3>
+                    <p>Software Development and Test Intern</p>
+                </div>
+                <div class="job-dates">
+                    <p>July 2024 - Present</p>
+                    <p>Hybrid</p>
+                </div>
+            </div>
+            <div class="job-description">
+                <ul>
+                    <li>Gained experience in backend processes using Scala and Java, contributing to the
+                        development and testing of software solutions. Proficient in utilizing tools such as
+                        Selenium, Sentry.io , Amplitude, Jira, and Customer.io to enhance software quality
+                        and performance.
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
