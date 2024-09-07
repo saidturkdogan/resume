@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         document.head.appendChild(link);
     }
 
-    // Light mode CSS dosyasını kaldırmak için bir fonksiyon
+    // Light mode CSS dosyasını kaldırmak için bir fonksiyon"
     function removeLightModeCSS() {
         const link = document.getElementById('lightModeCSS');
         if (link) {
