@@ -112,3 +112,34 @@ body {
     padding-right: 10px;
     border-radius: 10px;
 }
+
+#themeToggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #4a4a4a;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#themeToggle:hover {
+    background-color: #666666;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.toggle-text {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+#themeToggle:hover .toggle-text {
+    transform: scale(1.05);
+}
