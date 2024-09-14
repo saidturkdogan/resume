@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const themeToggle = document.getElementById('themeToggle');
     const body = document.body;
 
-    // Light mode CSS dosyasını dinamik olarak yüklemek için bir fonksiyon
     function loadLightModeCSS() {
         const link = document.createElement('link');
         link.href = 'light-mode.css';
@@ -11,7 +10,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
         document.head.appendChild(link);
     }
 
-    // Light mode CSS dosyasını kaldırmak için bir fonksiyon"
     function removeLightModeCSS() {
         const link = document.getElementById('lightModeCSS');
         if (link) {
@@ -19,7 +17,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
         }
     }
 
-    // Tema değiştirme fonksiyonu
     function toggleTheme() {
         const isLightMode = body.classList.toggle('light-mode');
         if (isLightMode) {
@@ -31,13 +28,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
         }
     }
 
-    // Sayfa yüklendiğinde kaydedilmiş tema tercihini kontrol et ve uygula
     const savedTheme = localStorage.getItem('theme') || 'dark';
     if (savedTheme === 'light') {
         body.classList.add('light-mode');
         loadLightModeCSS();
     }
 
-    // Tema değiştirme butonuna tıklama olayı ekle
     themeToggle.addEventListener('click', toggleTheme);
 });
