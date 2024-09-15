@@ -110,6 +110,10 @@ a:visited {
     color: #af9537;
 }
 
+a:link {
+    color: #af9537;
+}
+
 .company-logos {
     width: 55px;
     height: 55px;
