@@ -70,7 +70,7 @@ const ProfileSidebar = () => {
             <span>
               <a
                 className="underline underline-offset-2 decoration-2 text-blue-600 hover:text-blue-800 font-medium"
-                href="https://drive.google.com/file/d/1QLuG9tmfHbeKPa4BGHzxNSieYXgwZVXI/view"
+                href="https://drive.google.com/file/d/1HMCLYEkE8Ncc7Hfzx7Q6skSr99WasP9N/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
               >
